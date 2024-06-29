@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    * {
+      margin: 0%;
+      padding: 0%;
+      border: border-box;
+      border: none;
+      
+    }
+    body{
+      min-width: 1057px;
+    }
+   
+
+    .navbox {
+      background-color: black;
+      width: 100%;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      color: white;
+      justify-content: space-evenly;
+      
+    }
+
+    .p-nav {
+      /* border: 2px solid red; */
+      /* height: 58px;
+      width: 60px; */
+      width: 5%;
+      
+
+    }
+
+    .c-nav {
+      background-image: url("logo11.png");
+      background-size: cover;
+      height: 60px;
+      width: 70px;
+
+    }
+     .border{
+      border: 2px solid transparent;
+     }
+    
+
+
+    .border:hover {
+      border: 2px solid white;
+    }
+
+
+    .border1 {
+      border: 2px solid transparent;
+    }
+
+
+    .border1:hover {
+      border: 4px solid pink;
+    }
+
+    .c2-nav {
+      color: white;
+      margin-top: 10px;
+    }
+
+    .add-icon {
+      color: white;
+      font-size: 0.75rem;
+      margin-left: 7px;
+      display: flex;
+
+
+      /* jusalign-items: center;tify-content: center; */
+
+    }
+
+    .p2-nav {
+      /* border: 2px solid red; */
+               width: 7%;
+    }
+
+    .c-select {
+      background-color: rgb(239, 138, 172);
+      width: 10%;      
+      text-align: center;
+
+    }
+
+    .select {
+      /* border: 2px solid red ;         */
+      display: flex;
+      width: 40%;
+      height: 70%;
+
+    }
+
+    .c2-input {
+      width: 600px;
+      width: 80%;
+      /* height: 50px; */
+
+    }
+
+    .c2-box {
+      /* border: 2px solid yellow; */
+      background-color: pink;
+      color: black;
+      width: 10%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .p-sin {
+      /* border: 2px solid red; */
+      border: border-box;
+      width: 7%;
+      font-size: 10px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    .return {
+      /* border: 2px solid green; */
+      font-size: 16px;
+      border: borde-box;
+      width: 5%;
+    }
+    .cart{
+      /* border:2px solid red; */
+      width: 4%;
+    }
+
+    .snav {
+      
+      /* border: 2px solid red; */
+      /* height: 60px; */
+      background-color: #222f3d;
+      display: flex;
+      justify-content: space-between;
+      color: white;
+      padding: 10px 7% 10px 2%;
+      
+
+    }
+    .detail{
+      /* border: 2px solid black; */
+      width: 50%;
+      display: flex;
+      justify-content: space-between;
+      height: 100%;
+      
+    }
+    .shop-deals{
+      /* border: 2px solid red; */
+      width: 17%;
+      font-size: 15px;
+         }
+
+    .cnav {
+      /* border: 2px solid red; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .service {
+      margin-left: 3%;
+    }
+
+    .service-last {
+      /* margin-left: 30%;
+      margin-right: 10%; */
+    }
+
+    .photo {
+      /* border: 2px solid red; */
+      height: 20px;
+      width: 100%;
+      padding: 10px 0px;
+      text-align: center;
+      background-color: white;
+      margin-bottom: 3%;
+
+    }
+
+    .backphoto {
+      /* border: 2px solid green; */
+      height: 400px;
+      width: 100%;
+      box-sizing: border-box;
+      background-image: url("hero image.png");
+      background-size: cover;
+      display: flex;
+      align-items: flex-end;
+
+    }
+
+    .ppbox {
+      /* border: 2px solid black; */
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      background-color: #f5f5fd;
+
+    }
+
+    .pbox {
+      /* border: 2px solid blue; */
+      background-color: white;
+       width: 21%;
+      height: 410px;
+      box-sizing: border-box;
+      padding: 10px;
+      margin: 20px 0px;
+      color: black;
+
+    }
+
+    .product {
+      /* border: 2px solid black; */
+       height: 77%;
+      background-image: cover;
+      background-size: cover;
+      margin: 9px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <header>
+    <div class="navbox">
+      <div class="p-nav">
+        <div class="c-nav  border"></div>
+      </div>
+      <div class="p2-nav  border">
+        <p class="c2-nav">Deliver to</p>
+        <div class="add-icon">
+          <i class="fa-solid fa-location-dot"></i>
+          <p class="add-sec">India</p>
+        </div>
+      </div>
+
+      <div class="select  border1">
+        <select class="c-select ">
+          <option>All</option>
+        </select>
+        <input placeholder="    Search amazon" class="c2-input">
+        <div class="c2-box ">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </div>
+      <div class="p-sin  border">
+        <p><span>Hello, signin</span> </p>
+        <p class="nav-second">Account & Lists</p>
+      </div>
+      <div class="return  border">
+        <div class="c-return"> Return</div>
+        <p class="c2-return">$ orders</p>
+      </div>
+      <div class="cart border">
+        <i class="fa-solid fa-cart-shopping"></i>
+        Cart
+      </div>
+    </div>
+  </header>
+    <div class="snav">
+      <div class="detail">
+      <div class="cnav">
+        <i class="fa-solid fa-bars"></i>
+        All
+      </div>
+      <div class="service">Today's Deals</div>
+      <div class="service">Costomer sirvice</div>
+      <div class="service">Registry</div>
+      <div class="service">Gift Cards</div>
+      <div class="service">Sell</div>
+    </div>
+    <div class="shop-deals">
+      <div class="service-last">Shop deals in Electronics</div>
+    </div>
+    </div>
+
+    <div class="backphoto">
+      <div class="photo">
+        <p> ( Sahiba )you are on amazon. con. you can also shop on Amazon India for
+          millions of <a>click here to go to amazon. in</a> </p>
+      </div>
+    </div>
+    <div class="ppbox">
+    <div class="pbox">
+      <h2 class="cbox">Helth and personal care</h2>
+      <div class="product" style="background-image: url('download7.jpeg');"></div>
+      <p> click here for more information</p>
+
+    </div>
+
+    <div class="pbox">
+      <h2 class="cbox">Helth and personal care</h2>
+      <div class="product" style="background-image: url('download3.jpeg');"></div>
+      <p> click here for more information</p>
+
+    </div>
+
+    <div class="pbox">
+      <h2 class="cbox">Helth and personal care</h2>
+      <div class="product" style="background-image: url('download5.jpg');"></div>
+      <p> click here for more information</p>
+
+    </div>
+
+    <div class="pbox">
+      <h2 class="cbox">Helth and personal care</h2>
+      <div class="product" style="background-image: url('download4.jpeg');"></div>
+      <p> click here for more information</p>
+
+    </div>
+  </div>
+
+  <div class="ppbox">
+    <div class="pbox">
+      <h2 class="cbox">Helth and personal care</h2>
+      <div class="product" style="background-image: url('download10.jpg');"></div>
+      <p> click here for more information</p>
+
+    </div>
+
+    <div class="pbox">
+      <h2 class="cbox">Helth and personal care</h2>
+      <div class="product" style="background-image: url('download3.jpeg');"></div>
+      <p> click here for more information</p>
+
+    </div>
+
+    <div class="pbox">
+      <h2 class="cbox">Helth and personal care</h2>
+      <div class="product" style="background-image: url('download5.jpg');"></div>
+      <p> click here for more information</p>
+
+    </div>
+
+    <div class="pbox">
+      <h2 class="cbox">Helth and personal care</h2>
+      <div class="product" style="background-image: url('download4.jpeg');"></div>
+      <p> click here for more information</p>
+
+    </div>
+  </div>
+
+  <div class="ppbox">
+    <div class="pbox">
+      <h2 class="cbox">Helth and personal care</h2>
+      <div class="product" style="background-image: url('download9.webp');"></div>
+      <p> click here for more information</p>
+    </div>
+
+    <div class="pbox">
+      <h2 class="cbox">Helth and personal care</h2>
+      <div class="product" style="background-image: url('download5.jpg');"></div>
+      <p> click here for more information</p>
+    </div>
+
+    <div class="pbox">
+      <h2 class="cbox">Helth and personal care</h2>
+      <div class="product" style="background-image: url('download5.jpg');"></div>
+      <p> click here for more information</p>
+    </div>
+
+    <div class="pbox">
+      <h2 class="cbox">Helth and personal care</h2>
+      <div class="product" style="background-image: url('download4.jpeg');"></div>
+      <p> click here for more information</p>
+    </div>
+  </div>
+</body>
+
+</html>
